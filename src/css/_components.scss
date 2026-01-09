@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--md);
+  padding: var(--max);
+
+  &__title {
+    font-size: 2rem;
+    color: var(--white);
+  }
+
+  &__description {
+    font-size: 1rem;
+    color: var(--white);
+  }
+
+  &__location {
+    font-size: 1rem;
+    color: var(--white);
+  }
+}

@@ -1,0 +1,41 @@
+@use 'components.scss';
+@use 'fonts.scss';
+
+:root {
+  /* Colors */
+
+  /* Neutral */
+  --black: #061829;
+  --white: #FAF9F6;
+
+  /* Primary */
+  --dark-teal: #104046;
+  --light-teal: #005D5C;
+
+  /* Sizes */
+  --xxs: 0.25rem;
+  --xs: 0.5rem;
+  --sm: 0.75rem;
+  --md: 1rem;
+  --lg: 1.25rem;
+  --xl: 1.5rem;
+  --xxl: 1.75rem;
+  --max: 2rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  inline-size: 100dvi;
+  min-block-size: 100dvb;
+}
+
+body {
+  background-color: var(--black);
+}
