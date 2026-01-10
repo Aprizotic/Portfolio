@@ -1,7 +1,8 @@
 .header {
+  inline-size: 100%;
   display: flex;
   flex-direction: column;
-  gap: var(--md);
+  gap: var(--lg);
   padding: var(--max);
 
   &__title {
@@ -17,5 +18,144 @@
   &__location {
     font-size: 1rem;
     color: var(--white);
+  }
+
+  &__links {
+    display: flex;
+    gap: var(--xl);
+    align-items: center;
+  }
+}
+
+
+.main {
+  inline-size: 100%;
+
+  &__history {
+    border: 1px solid var(--dark-teal);
+    border-radius: var(--sm);
+    overflow: hidden;
+  }
+
+  &__button-wrapper {
+    border: 2px solid var(--dark-teal);
+    background-color: var(--dark-teal);
+    border-radius: var(--sm);
+    display: flex;
+    padding: 0.1rem;
+  }
+
+  &__section {
+    position: relative;
+  }
+}
+
+
+.card {
+  padding-inline: var(--sm);
+  padding-block: var(--max);
+  display: flex;
+  gap: var(--md);
+
+  &__img {
+    position: relative;
+    border: 1px solid var(--dark-teal);
+    background-color: var(--black);
+    border-radius: 50%;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--xs);
+  }
+
+  &__title {
+    color: var(--white);
+    font-size: 1.75rem;
+  }
+
+  &__results {
+    color: var(--white);
+  }
+
+  &__time {
+    color: var(--white);
+    font-size: 0.75rem;
+  }
+
+  &__skills {
+    display: flex;
+    flex-direction: column;
+    margin-block-start: var(--sm);
+    gap: var(--md);
+  }
+
+  &__skill {
+    color: var(--white);
+    font-size: 0.9rem;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background-color: var(--dark-teal);
+    left: calc(var(--sm) + 30px);
+    top: 0;
+    z-index: 0;
+  }
+}
+
+
+.button {
+  all: unset;
+  color: var(--white);
+  font-size: 1rem;
+  display: flex;
+  gap: var(--sm);
+  justify-content: center;
+  align-items: center;
+  inline-size: fit-content;
+  padding-inline: var(--sm);
+  padding-block: var(--xs);
+  border-radius: var(--xs);
+  cursor: pointer;
+  transition: border-color 0.3s ease-out, transform 0.3s ease-out;
+
+  &--primary {
+    border: 1px solid var(--white);
+
+    &:hover {
+      border-color: var(--light-teal);
+    }
+  }
+
+  &--toggle {
+    flex: 1;
+  }
+
+  &--selected {
+    background-color: var(--black);
+    font-weight: 600;
+  }
+}
+
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: var(--white);
+
+  &:hover {
+    svg {
+      color: var(--light-teal);
+    }
   }
 }

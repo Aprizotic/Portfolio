@@ -9,7 +9,7 @@
   --white: #FAF9F6;
 
   /* Primary */
-  --dark-teal: #104046;
+  --dark-teal: #0A2A2D;
   --light-teal: #005D5C;
 
   /* Sizes */
@@ -38,4 +38,28 @@ html, body {
 
 body {
   background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--md);
+  padding-inline: var(--max);
+  padding-block: var(--lg);
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  display: block;
+}
+
+svg {
+  transition: color 0.3s ease-out;
+}
+
+/* Utility Classes */
+
+.hidden {
+  display: none;
 }
