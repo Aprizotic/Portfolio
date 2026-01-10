@@ -29,11 +29,15 @@
     <main class="main">
       <section class="main__history">
         <div class="main__button-wrapper">
-          <button class="button button--toggle button--selected">Education</button>
-          <button class="button button--toggle">Experience</button>
+          <button class="button button--toggle button--selected"
+                  aria-label="Show education history"
+                  data-js="show-education">Education</button>
+          <button class="button button--toggle"
+                  aria-label="Show experience history"
+                  data-js="show-experience">Experience</button>
         </div>
 
-        <section class="main__section">
+        <section class="main__section main__section--education">
           <div class="card">
             <img src="src/assets/images/queensmead-logo.png"
                  width="100px"
@@ -43,7 +47,7 @@
             <div class="card__details">
               <h2 class="card__title">Queensmead School</h2>
               <p class="card__results">Engineering: Distinction* <br> Computer Science: A <br> Maths: A</p>
-              <span class="card__time">Sep 2023 - June 2025</span>
+              <span class="card__time">Sep 2023 - Jun 2025</span>
 
               <ul class="card__skills">
                 <li class="card__skill">Designed and Manufactured several projects as a team and a solo, physical and digital</li>
@@ -54,7 +58,7 @@
           </div>
         </section>
         
-        <section class="main__section hidden">
+        <section class="main__section main__section--experience hidden">
           <div class="card">
             <img class="card__img">
 
