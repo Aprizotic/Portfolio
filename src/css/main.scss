@@ -70,6 +70,12 @@ svg {
   transition: color 0.3s ease-out;
 }
 
+button:focus-visible, 
+a:focus-visible {
+  outline: 2px solid #F2A65A;
+  outline-offset: 2px;
+}
+
 /* Utility Classes */
 
 .hidden {
